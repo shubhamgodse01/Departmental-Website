@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dr.Ghali College Gadhinglaj</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content=" Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+    
+	<!-- css files -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }} "> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }} " type="text/css" media="all" /> <!-- Style-CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.css') }}"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+	<!--web font-->
+	<link href="//fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<!--//web font-->
+
+</head>
+
+<body>
+
+
+<!-- header -->
+<header>
+	<div class="container">
+		<!-- top header -->
+		<section class="row top_header pt-3">
+			<div class="col-lg-6">
+			</div>
+				<div class="col-lg-6 buttons">
+
+					<button type="button" class="btn btn-info btn-lg-block w3ls-btn px-4 text-capitalize mr-2" data-toggle="modal"
+						aria-pressed="false" data-target="#exampleModal">
+						Login
+					</button>
+
+				</div>
+		</section>
+		<!-- top header -->
+
+		<!-- nav -->
+		<nav class="navbar navbar-expand-lg navbar-light py-sm-4 py-2">
+			<!-- logo -->
+			<h1>
+				<a class="navbar-brand" href="index.html"> <i class="fab fa-affiliatetheme"></i>
+					Computer Science
+				</a>
+			</h1>
+			<!-- //logo -->
+			<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- main nav -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-lg-auto text-center">
+					<li class="nav-item active  mr-lg-3">
+						<a class="nav-link" href="{{ url_for('index') }}">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item mr-lg-3">
+						<a class="nav-link" href="{{ url_for('about') }}">about</a>
+					</li>
+
+					<li class="dropdown nav-item mr-lg-3">
+						<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle ">
+							Events
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="nav-item">
+								<a href="{{ url_for('noticeview') }}" class="nav-link">Notice</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url_for('webinarview') }}" class="nav-link">Webinars</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url_for('placementview') }}" class="nav-link">Placement</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url_for('technoparvview') }}" class="nav-link">Technoparv</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="{{ url_for('contact') }}">contact</a>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="{{ url_for('feedback') }}">Feedback</a>
+					</li>
+					<!-- search --->
+					<div class="search-bar-agileits">
+						<div class="cd-main-header">
+							<ul class="cd-header-buttons">
+								<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+							</ul>
+							<!-- cd-header-buttons -->
+						</div>
+						<div id="cd-search" class="cd-search">
+							<form action="#" method="post">
+								<input name="Search" type="search" placeholder="Click enter after typing...">
+							</form>
+						</div>
+					</div>
+					<!-- search --->
+				</ul>
+			</div>
+			<!-- //main nav -->
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+ <!-- inner banner -->
+    <div class="inner_banner layer" id="home">
+        <div class="container">
+            <div class="agileinfo-inner">
+                <h2 class="text-center text-white">
+                    Want to Contact Us???
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- //inner banner -->
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+        </ol>
+    </nav>
+    <!-- //breadcrumbs -->
+
+<!-- contact -->
+<section class="contact py-5">
+	<div class="container py-sm-3">
+		<h3 class="heading text-capitalize mb-lg-5 mb-4"> Contact Us - <span>Get In Touch</span> </h3>
+		<div class="address row">
+			<div class="col-md-4 address-grid">
+				<div class="address-info">
+					<div class="address-left text-center">
+						<i class="far fa-map"></i>
+					</div>
+					<div class="address-right text-center">
+						<h6 class="ad-info text-uppercase mb-2">Address</h6>
+						<p> Bhadagaon Road, Gadhinglaj
+							<br>
+								   Tal : Gadhinglaj, Dist : Kolhapur 
+								   <br>
+								   Maharashtra-416502
+						</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-4 address-grid">
+				<div class="address-info">
+					<div class="address-left text-center">
+						<i class="far fa-envelope"></i>
+					</div>
+					<div class="address-right text-center">
+						<h6 class="ad-info text-uppercase mb-2">Email</h6>
+							<a href="mailto:example@email.com"> drghalicollege@gmail.com</a>
+							
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-4 address-grid">
+				<div class="address-info">
+					<div class="address-left text-center">
+						<i class="fas fa-mobile-alt"></i>
+					</div>
+					<div class="address-right text-center">
+						<h6 class="ad-info text-uppercase mb-2">Phone</h6>
+						<p>
+							<strong>Principal :</strong>  +91 9421112626
+        <br>
+        <strong>Phone :</strong> 2327 222119
+        <br>
+        <strong>Fax :</strong> 2327 224419
+						</p>
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form row py-5">
+			<div class="col-lg-6 contact-form">
+				<form action="#" method="post">
+					<div class="fields-grid">
+						<div class="styled-input agile-styled-input-top">
+							<input type="text" name="name" required="">
+							<label>Full Name</label>
+							<span></span>
+						</div> 
+						<div class="styled-input">
+							<input type="email" name="email" required="">
+							<label>Email Address</label>
+							<span></span>
+						</div>
+						<div class="styled-input">
+							<input type="tel" name="number" required="">
+							<label>Phone Number</label>
+							<span></span>
+						</div>
+						<div class="styled-input mt-5">
+							<textarea name="message"></textarea>
+							<label class="text">Your Message</label>
+							<span></span>
+						</div>
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="col-lg-6 mt-lg-0 mt-5">
+				<div class="bg-img">
+					<div class="contact-layer">
+						<p><i class="fas mr-2 fa-phone"></i></p>
+						<h3 class="mb-3">Dont hesitate to contact us for any kind of information</h3>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3831.0220073017745!2d74.34692131486048!3d16.219308288788387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc08e84e31f5c87%3A0xf56314c9120ed753!2sDr.%20Ghali%20College!5e0!3m2!1sen!2sin!4v1649822785316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+</section>	
+<!-- //contact -->
+		
+<!-- footer -->	
+<footer>
+	<div class="container-fluid p-sm-5 py-5">
+		<div class="row footer-gap">
+			<div class="col-lg-3 col-sm-6">
+				<h3 class="text-uppercase mb-3">Address</h3>
+				<address class="mb-0">
+					<p><strong>Headquarters:</strong></p>
+					<p class="mb-3"><i class="fas fa-map-marker"></i> Gadhinglaj <br>Kolhapur,Maharashtra</p>
+					<p><i class="fas fa-clock"></i> Timings : 7 a.m to 4 p.m</p>
+					<p><i class="fas fa-phone"></i> 2327 222119</p>
+					<p><i class="fas fa-envelope-open"></i> <a href="mailto:info@example.com">drghalicollege@gmail.com</a></p>
+					<p><i class="fas fa-fax"></i> 2327 224419 </p>
+				</address>
+			</div>
+			
+			
+			
+			<div class="col-lg-2 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+				<h3 class="text-uppercase mb-3"> Follow us</h3>
+				<p class="mb-4">Facebook</p>
+				<ul class="social mt-lg-0 mt-3">
+					<li class="mr-1"><a href="https://www.facebook.com/DrGhali-CollegeGadhinglaj-229992963860096/"><span class="fab fa-facebook-f"></span></a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="copyright pb-5 text-center">
+		<p>© 2022 All Rights Reserved | Design by Shubham | <a href="http://www.ghalicollege.edu.in" target="_blank">Ghali College</a> </p>
+	</div>
+</footer>
+<!-- footer -->
+<!-- Login modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-uppercase" id="exampleModalLabel1">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form  action="{{ url_for('login') }}" method="post" class="p-3">
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">User Name</label>
+							<input type="text" class="form-control" placeholder="User Name" name="Name" id="recipient-name" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name1" class="col-form-label">Password</label>
+							<input type="password" class="form-control" placeholder="Password" name="upass" id="recipient-name1" required="">
+						</div>
+						<div class="right-w3l mt-4 mb-3">
+							<input type="submit" class="form-control" value="Login">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Login modal -->
+
+
+
+
+	<!-- js -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<!-- //js -->
+
+	<!-- search-bar -->
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	<!-- //search-bar -->
+
+	<!-- Countdown-Timer-JavaScript -->
+	<script src="{{ url_for('static', filename='js/simplyCountdown.js') }}"></script>
+	<!-- easy to customize -->
+	<script>
+		$('#simply-countdown-losange').simplyCountdown({
+			year: 2020,
+			month: 1,
+			day: 06
+		});
+	</script>
+	<!-- //Countdown-Timer-JavaScript -->
+
+	<!-- start-smoth-scrolling -->
+	<script src="{{ url_for('static', filename='js/SmoothScroll.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/move-top.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/easing.js') }}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+
+</body>
+</html>

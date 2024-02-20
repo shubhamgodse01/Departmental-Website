@@ -1,0 +1,32 @@
+{% extends "header.html" %}
+{% block body %}
+<style>
+    .div1
+
+    {
+    display: inline-block;
+    margin:30px;
+    }
+</style>
+<div class="container">
+    {% for row in value%}
+    <div class="div1">
+        <div class="row">
+            <div class="col-sm-12">
+                <hr>
+                <p>Student Name :{{ row[1] }}</p>
+                <br><br>
+                <p>Company Name :{{ row[2] }}</p>
+                <br><br>
+                <a href="{{ row[3] }}" ><img src="{{ row[3] }}" height="300" width="300"></a>
+                <br><br><br>
+                <p>Description :{{ row[4] }}</p>
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+
+</div>
+{% endblock %}

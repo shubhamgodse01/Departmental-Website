@@ -1,0 +1,161 @@
+{% extends "admin_header.html" %}
+{% block body %}
+<div class="container">
+  <h2>Add</h2>
+  <p></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+
+          <img src="{{ url_for('static', filename='images/notice11.jpg') }}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <br>
+            <p align="center">Add Notice</p>
+          </div>
+
+      </div>
+        <br>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <a href="{{ url_for('notice') }}" class="nav-link">
+        <input type="submit" name="" value="Click Here" class="btn btn-primary">
+          </a>
+
+      </div>
+
+      <div class="col-sm-3"></div>
+    </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+
+          <img src="{{ url_for('static', filename='images/webinar1.jpg') }}" alt="Nature" style="width:100%">
+          <div class="caption">
+            <br>
+            <p align="center">Add Webinar/Seminar</p>
+          </div>
+
+      </div>
+            <br>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <a href="{{ url_for('webinar') }}" class="nav-link">
+        <input type="submit" name="" value="Click Here" class="btn btn-primary">
+        </a>
+
+      </div>
+
+      <div class="col-sm-3"></div>
+    </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+
+          <img src="{{ url_for('static', filename='images/placement.png') }}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <br>
+            <p align="center">Add Placement</p>
+          </div>
+
+      </div>
+            <br>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <a href="{{ url_for('placement') }}" class="nav-link">
+        <input type="submit" name="" value="Click Here" class="btn btn-primary">
+        </a>
+
+      </div>
+
+      <div class="col-sm-3"></div>
+    </div>
+    </div>
+  </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+           <div class="col-md-4">
+      <div class="thumbnail">
+
+          <img src="{{ url_for('static', filename='images/technoparv.JPG') }}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <br>
+            <p align="center">Add Technoparv</p>
+          </div>
+
+      </div>
+        <br>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <a href="{{ url_for('technoparv') }}" class="nav-link">
+        <input type="submit" name="" value="Click Here" class="btn btn-primary">
+        </a>
+
+      </div>
+
+      <div class="col-sm-3"></div>
+    </div>
+    </div>
+       <div class="col-md-4">
+      <div class="thumbnail">
+
+          <img src="{{ url_for('static', filename='images/feedback1.jpg') }}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <br>
+            <p align="center">View Feedback</p>
+          </div>
+
+      </div>
+        <br>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <a href="{{ url_for('feedbackview') }}" class="nav-link">
+        <input type="submit" name="" value="Click Here" class="btn btn-primary">
+          </a>
+
+      </div>
+
+      <div class="col-sm-3"></div>
+    </div>
+    </div>
+
+       <div class="col-md-4">
+      <div class="thumbnail">
+
+          <img src="{{ url_for('static', filename='images/cont.jpg') }}"  alt="Lights" style="width:340px; height:198px">
+          <div class="caption">
+            <br>
+            <p align="center">View Contact</p>
+          </div>
+
+      </div>
+        <br>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <a href="{{ url_for('contactview') }}" class="nav-link">
+        <input type="submit" name="" value="Click Here" class="btn btn-primary">
+          </a>
+
+      </div>
+
+      <div class="col-sm-3"></div>
+    </div>
+    </div>
+
+
+</div>
+
+</div>
+
+
+{% endblock %}
